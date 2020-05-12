@@ -31,6 +31,11 @@ pipeline {
         }
       }
     }
+    stage('Github_Packaging') {
+      steps {
+          sh 'make github'
+      }
+    }
   }
 }
 
